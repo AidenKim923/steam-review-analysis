@@ -22,16 +22,30 @@
 - Pandas, Seaborn, plotly, Jupyter Notebook
 - Git
 - Notion
-- Tableau
 
 ## 📈 주요 분석 항목
+- 장르별 유저들의 만족도 분석(긍정적 평가의 빈도)
 
-- 플레이타임별 리뷰 수 및 추천률
-- 긍/부정 리뷰 키워드 분석
-- 장르별 추천/비추천 리뷰 패턴
-- 부정적 리뷰가 집중된 게임군 탐색
+## 결론
+- 대부분의 게임은 평균 1,000분 이하의 플레이타임을 가짐
+![average_playtime_zoomed](visuals/average_playtime_zoomed.png)
 
-## 📎 관련 링크
+- 일부 대형 게임은 10만분 이상으로 튀는 그래프를 보여줌
+![alt text](visuals/price_vs_playtime.png)
 
-- 🔗 [프로젝트 노션 대시보드]() *(작성 후 링크 추가 예정)*
-- 🔗 [Tableau 시각화 리포트]() *(작성 후 링크 추가 예정)*
+- 평균적으로 rpg가 non-rpg보다 플레이타임 시간이 김
+![alt text](visuals/rpg_playtime_boxplot.png)
+
+- 긍정률은 대부분 70% 이상을 가져가고 있음
+![positive_ratio_distribution](visuals/positive_ratio_distribution.png)
+
+- 창작 도구 계열(Audio, Design 등)은 긍정률이 매우 높음 → 만족도 높음
+![alt text](visuals/top10_genre_positive_review.png)
+
+## 확장 가능성
+- 리뷰 텍스트 기반 분석을 할수도 있을 것 같음
+
+## 레포트
+1. [전처리 레포트](reports/01_summary.md)
+2. [eda 레포트](reports/02_eda_summary.md)
+3. [장르 분석 레포트](reports/03_genre_analysis.md)
